@@ -1,0 +1,47 @@
+{
+  "run_id": "run_print_0001",
+  "type": "proc.run",
+  "timestamp_utc": "2025-12-29T21:41:30Z",
+  "transform_ref": "arc://demo-brief-001/atom/proc_transform_print_a4_001",
+  "actor": {
+    "persona_ref": "arc://demo-brief-001/atom/intent_audience_001",
+    "executed_by": "human+tool"
+  },
+  "environment": {
+    "tool_name": "arc-cli",
+    "tool_version": "0.1.0",
+    "model": null,
+    "config_hash": "sha256:1111111111111111111111111111111111111111111111111111111111111111"
+  },
+  "reproducibility": "bounded",
+  "inputs": [
+    {
+      "ref": "arc://demo-brief-001/atom/text_brief_001",
+      "content_hash": "sha256:2222222222222222222222222222222222222222222222222222222222222222"
+    },
+    {
+      "ref": "arc://demo-brief-001/atom/text_scope_001",
+      "content_hash": "sha256:3333333333333333333333333333333333333333333333333333333333333333"
+    },
+    {
+      "ref": "arc://demo-brief-001/atom/claim_001",
+      "content_hash": "sha256:4444444444444444444444444444444444444444444444444444444444444444"
+    },
+    {
+      "ref": "arc://demo-brief-001/atom/claim_002",
+      "content_hash": "sha256:5555555555555555555555555555555555555555555555555555555555555555"
+    },
+    {
+      "ref": "arc://demo-brief-001/atom/claim_003",
+      "content_hash": "sha256:6666666666666666666666666666666666666666666666666666666666666666"
+    }
+  ],
+  "outputs": [
+    {
+      "ref": "arc://demo-brief-001/atom/view_print_a4_001",
+      "content_hash": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+      "materialized_path": "views/print_a4.html"
+    }
+  ],
+  "notes": "Demo print run: generated A4 print view from brief + scope + claims."
+}

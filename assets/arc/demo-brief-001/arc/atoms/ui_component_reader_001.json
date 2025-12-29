@@ -1,0 +1,9 @@
+{
+  "atom_id": "ui_component_reader_001",
+  "type": "ui.component",
+  "payload": {
+    "component_kind": "reader",
+    "title": "Reader View",
+    "description": "Displays the brief and allows navigation to claims and sources."
+  }
+}

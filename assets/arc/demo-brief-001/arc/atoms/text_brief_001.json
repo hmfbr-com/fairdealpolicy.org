@@ -1,0 +1,9 @@
+{
+  "atom_id": "text_brief_001",
+  "type": "text.block",
+  "payload": {
+    "format": "markdown",
+    "title": "Brief",
+    "body": "This brief summarizes three core claims and their supporting evidence. Use the evidence map to inspect traceability from claim to evidence to source. A print-optimized view is available for A4 output."
+  }
+}

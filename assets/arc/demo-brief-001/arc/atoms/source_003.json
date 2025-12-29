@@ -1,0 +1,11 @@
+{
+  "atom_id": "source_003",
+  "type": "source",
+  "payload": {
+    "title": "Git Internals / Object Model (content-addressed objects)",
+    "locator": "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects",
+    "kind": "url",
+    "publisher": "git-scm.com",
+    "year": 2014
+  }
+}

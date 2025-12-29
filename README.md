@@ -36,3 +36,9 @@ Static site for the Fair Deal Policy (FDP). Designed for GitHub Pages + custom d
 ## v1.1.5 (Mobile navigation)
 - Added collapsible mobile menu (hamburger) with accessible toggle
 - Improved mobile spacing, tap targets, and code block scrolling
+
+## v1.1.8 (Templates layer)
+- Added /templates/ hub page
+- Added canonical /templates/skeleton/ (FDP Template Skeleton v1.0)
+- Added downloadable formats (Markdown + RTF)
+- Navigation + footer updated with Templates link

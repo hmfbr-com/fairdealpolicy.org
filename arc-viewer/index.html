@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arc Viewer | Fair Deal Policy</title>
+  <meta name="description" content="Arc Bundle Viewer (internal): browse brief, claims, evidence, and sources with traceability." />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <style>
+    .arc-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:start}
+    .arc-card{border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:14px;background:rgba(255,255,255,.03)}
+    .arc-card h2{margin:0 0 10px 0;font-size:1.05rem}
+    .arc-kv{display:flex;gap:8px;flex-wrap:wrap}
+    .arc-pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 10px;font-size:.92rem}
+    .arc-list{display:flex;flex-direction:column;gap:10px}
+    .arc-item{border:1px solid rgba(255,255,255,.10);border-radius:12px;padding:12px;background:rgba(255,255,255,.02)}
+    .arc-item h3{margin:0 0 6px 0;font-size:1rem}
+    .arc-meta{color:rgba(255,255,255,.72);font-size:.95rem}
+    .arc-rel{margin-top:10px;padding-top:10px;border-top:1px dashed rgba(255,255,255,.16)}
+    .arc-rel a{word-break:break-word}
+    .arc-two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .arc-small{font-size:.95rem}
+    .arc-error{border-color:rgba(255,80,80,.35);background:rgba(255,80,80,.08)}
+    .arc-ok{border-color:rgba(120,255,180,.25);background:rgba(120,255,180,.06)}
+    @media (max-width: 960px){
+      .arc-grid{grid-template-columns:1fr}
+      .arc-two{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <div class="container content">
+      <p class="kicker">Internal</p>
+      <h1>Arc Bundle Viewer</h1>
+      <p class="lede">Browse a bundle by structure: brief → claims → evidence → sources.</p>
+
+      <div class="arc-card arc-small" id="arcStatus">
+        <strong>Status:</strong> loading…
+      </div>
+
+      <div class="arc-grid" id="arcRoot" data-arc-base="/assets/arc/demo-brief-001/arc">
+        <section class="arc-card">
+          <h2>Brief</h2>
+          <div id="briefTitle" class="arc-meta"></div>
+          <div id="briefBody" style="margin-top:10px"></div>
+          <div class="arc-rel">
+            <a class="btn" id="printLink" href="#" target="_blank" rel="noopener">Open print view</a>
+          </div>
+        </section>
+
+        <aside class="arc-card">
+          <h2>Bundle</h2>
+          <div class="arc-kv" id="bundleKv"></div>
+          <div style="margin-top:12px" class="arc-meta" id="bundleNotes"></div>
+        </aside>
+      </div>
+
+      <div class="arc-two" style="margin-top:18px">
+        <section class="arc-card">
+          <h2>Claims</h2>
+          <div class="arc-list" id="claimsList"></div>
+        </section>
+
+        <section class="arc-card">
+          <h2>Evidence Map</h2>
+          <p class="arc-meta">Simple traversal view (v0.1). Select a claim to see supporting evidence and sources.</p>
+          <div class="arc-list" id="mapList"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="/assets/js/partials.js"></script>
+  <script src="/assets/js/copy.js"></script>
+  <script src="/assets/js/arc-viewer.js"></script>
+</body>
+</html>

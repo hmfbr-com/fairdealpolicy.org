@@ -1,0 +1,20 @@
+{
+  "atom_id": "proc_transform_print_a4_001",
+  "type": "proc.transform",
+  "payload": {
+    "name": "render.print.a4",
+    "version": "0.1",
+    "inputs": [
+      "arc://demo-brief-001/atom/text_brief_001",
+      "arc://demo-brief-001/atom/text_scope_001",
+      "arc://demo-brief-001/atom/claim_001",
+      "arc://demo-brief-001/atom/claim_002",
+      "arc://demo-brief-001/atom/claim_003"
+    ],
+    "outputs": [
+      "arc://demo-brief-001/atom/view_print_a4_001"
+    ],
+    "determinism": "bounded",
+    "notes": "Creates a print-ready HTML representation suitable for A4."
+  }
+}

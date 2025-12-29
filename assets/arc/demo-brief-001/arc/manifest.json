@@ -1,0 +1,32 @@
+{
+  "artifact_id": "demo-brief-001",
+  "schema": "arc.manifest.v0.1",
+  "title": "Brief + Evidence Map (Demo)",
+  "created_utc": "2025-12-29T21:40:00Z",
+  "entrypoints": [
+    "arc://demo-brief-001/atom/intent_goal_001",
+    "arc://demo-brief-001/atom/text_brief_001",
+    "arc://demo-brief-001/atom/ui_component_reader_001",
+    "arc://demo-brief-001/atom/ui_component_evidence_map_001"
+  ],
+  "requires_minimum_capabilities": [
+    "cap.read.base"
+  ],
+  "optional_capabilities": [
+    "cap.graph.query.v1",
+    "cap.render.print.a4",
+    "cap.ui.interactive.v1",
+    "cap.validate.rules.v1"
+  ],
+  "security_policy": {
+    "no_auto_fetch": true,
+    "external_network": "blocked_by_default",
+    "allow_local_assets": true
+  },
+  "integrity_policy": {
+    "identity_permanent": true,
+    "unknown_extensions": "preserve",
+    "broken_relations": "allow_if_dangling_true"
+  },
+  "notes": "Demo specimen for Arc Bundle: brief narrative + claims + evidence + evidence-map UI + print run provenance."
+}

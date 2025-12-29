@@ -1,0 +1,9 @@
+{
+  "atom_id": "evidence_001",
+  "type": "evidence",
+  "payload": {
+    "summary": "PROV’s Entity–Activity–Agent framing supports representing provenance as structured data rather than informal history.",
+    "excerpt": "Key idea: explicit modeling of provenance enables interoperable exchange of lineage information.",
+    "note": "Paraphrase summary; do not treat as verbatim quotation."
+  }
+}

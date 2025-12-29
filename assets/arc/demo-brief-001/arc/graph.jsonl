@@ -1,0 +1,28 @@
+{"rel_id": "rel_0001", "type": "references", "from": "arc://demo-brief-001/atom/text_brief_001", "to": "arc://demo-brief-001/atom/claim_001", "props": {"weight": 0.8}}
+{"rel_id": "rel_0002", "type": "references", "from": "arc://demo-brief-001/atom/text_brief_001", "to": "arc://demo-brief-001/atom/claim_002", "props": {"weight": 0.8}}
+{"rel_id": "rel_0003", "type": "references", "from": "arc://demo-brief-001/atom/text_brief_001", "to": "arc://demo-brief-001/atom/claim_003", "props": {"weight": 0.8}}
+{"rel_id": "rel_0004", "type": "part_of", "from": "arc://demo-brief-001/atom/text_scope_001", "to": "arc://demo-brief-001/atom/text_brief_001", "props": {"label": "scope notes"}}
+{"rel_id": "rel_0005", "type": "supports", "from": "arc://demo-brief-001/atom/evidence_001", "to": "arc://demo-brief-001/atom/claim_003", "props": {"confidence": 0.85}}
+{"rel_id": "rel_0006", "type": "supports", "from": "arc://demo-brief-001/atom/evidence_002", "to": "arc://demo-brief-001/atom/claim_001", "props": {"confidence": 0.75}}
+{"rel_id": "rel_0007", "type": "supports", "from": "arc://demo-brief-001/atom/evidence_003", "to": "arc://demo-brief-001/atom/claim_002", "props": {"confidence": 0.8}}
+{"rel_id": "rel_0008", "type": "derived_from", "from": "arc://demo-brief-001/atom/evidence_001", "to": "arc://demo-brief-001/atom/source_001", "props": {}}
+{"rel_id": "rel_0009", "type": "derived_from", "from": "arc://demo-brief-001/atom/evidence_002", "to": "arc://demo-brief-001/atom/source_002", "props": {}}
+{"rel_id": "rel_0010", "type": "derived_from", "from": "arc://demo-brief-001/atom/evidence_003", "to": "arc://demo-brief-001/atom/source_003", "props": {}}
+{"rel_id": "rel_0011", "type": "requires_capability", "from": "arc://demo-brief-001/atom/ui_component_reader_001", "to": "arc://demo-brief-001/atom/intent_goal_001", "props": {"requires": ["cap.read.base"]}}
+{"rel_id": "rel_0012", "type": "requires_capability", "from": "arc://demo-brief-001/atom/ui_component_evidence_map_001", "to": "arc://demo-brief-001/atom/intent_goal_001", "props": {"requires": ["cap.graph.query.v1", "cap.ui.interactive.v1"]}}
+{"rel_id": "rel_0013", "type": "requires_capability", "from": "arc://demo-brief-001/atom/proc_transform_print_a4_001", "to": "arc://demo-brief-001/atom/intent_goal_001", "props": {"requires": ["cap.render.print.a4"]}}
+{"rel_id": "rel_0014", "type": "contains", "from": "arc://demo-brief-001/atom/ui_component_reader_001", "to": "arc://demo-brief-001/atom/text_brief_001", "props": {}}
+{"rel_id": "rel_0015", "type": "contains", "from": "arc://demo-brief-001/atom/ui_component_reader_001", "to": "arc://demo-brief-001/atom/text_scope_001", "props": {}}
+{"rel_id": "rel_0016", "type": "renders", "from": "arc://demo-brief-001/atom/ui_component_reader_001", "to": "arc://demo-brief-001/atom/claim_001", "props": {}}
+{"rel_id": "rel_0017", "type": "renders", "from": "arc://demo-brief-001/atom/ui_component_reader_001", "to": "arc://demo-brief-001/atom/claim_002", "props": {}}
+{"rel_id": "rel_0018", "type": "renders", "from": "arc://demo-brief-001/atom/ui_component_reader_001", "to": "arc://demo-brief-001/atom/claim_003", "props": {}}
+{"rel_id": "rel_0019", "type": "renders", "from": "arc://demo-brief-001/atom/ui_component_evidence_map_001", "to": "arc://demo-brief-001/atom/claim_001", "props": {}}
+{"rel_id": "rel_0020", "type": "renders", "from": "arc://demo-brief-001/atom/ui_component_evidence_map_001", "to": "arc://demo-brief-001/atom/claim_002", "props": {}}
+{"rel_id": "rel_0021", "type": "renders", "from": "arc://demo-brief-001/atom/ui_component_evidence_map_001", "to": "arc://demo-brief-001/atom/claim_003", "props": {}}
+{"rel_id": "rel_0022", "type": "references", "from": "arc://demo-brief-001/atom/claim_001", "to": "arc://demo-brief-001/atom/source_002", "props": {"note": "conceptual support"}}
+{"rel_id": "rel_0023", "type": "references", "from": "arc://demo-brief-001/atom/claim_002", "to": "arc://demo-brief-001/atom/source_003", "props": {"note": "identity stability analogy"}}
+{"rel_id": "rel_0024", "type": "references", "from": "arc://demo-brief-001/atom/claim_003", "to": "arc://demo-brief-001/atom/source_001", "props": {"note": "provenance modeling"}}
+{"rel_id": "rel_0025", "type": "constrained_by", "from": "arc://demo-brief-001/atom/proc_transform_print_a4_001", "to": "arc://demo-brief-001/atom/intent_success_001", "props": {}}
+{"rel_id": "rel_0026", "type": "constrained_by", "from": "arc://demo-brief-001/atom/ui_component_evidence_map_001", "to": "arc://demo-brief-001/atom/intent_success_001", "props": {}}
+{"rel_id": "rel_0027", "type": "depends_on", "from": "arc://demo-brief-001/atom/view_print_a4_001", "to": "arc://demo-brief-001/atom/proc_transform_print_a4_001", "props": {}}
+{"rel_id": "rel_0028", "type": "derived_from", "from": "arc://demo-brief-001/atom/view_print_a4_001", "to": "arc://demo-brief-001/atom/text_brief_001", "props": {"via": "render.print.a4"}}

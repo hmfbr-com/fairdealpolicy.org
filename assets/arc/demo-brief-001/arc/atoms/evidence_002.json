@@ -1,0 +1,9 @@
+{
+  "atom_id": "evidence_002",
+  "type": "evidence",
+  "payload": {
+    "summary": "OOXML markup compatibility includes mechanisms to allow consumers to ignore unfamiliar markup while preserving it.",
+    "excerpt": "Key idea: forward compatibility via ignorable namespaces / alternate content patterns.",
+    "note": "Paraphrase summary; do not treat as verbatim quotation."
+  }
+}

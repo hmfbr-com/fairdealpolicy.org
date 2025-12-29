@@ -1,0 +1,9 @@
+{
+  "atom_id": "claim_003",
+  "type": "claim",
+  "payload": {
+    "claim_text": "Recording transforms as first-class provenance supports auditability and controlled regeneration of outputs.",
+    "status": "asserted",
+    "confidence_self_reported": 0.85
+  }
+}

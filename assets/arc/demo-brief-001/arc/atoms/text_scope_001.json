@@ -1,0 +1,9 @@
+{
+  "atom_id": "text_scope_001",
+  "type": "text.block",
+  "payload": {
+    "format": "markdown",
+    "title": "Scope",
+    "body": "Scope: internal demonstration of Arc Bundle mechanics (atoms, relations, lenses, transforms, provenance). Not a public-facing publication."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "atom_id": "intent_success_001",
+  "type": "intent.success_criteria",
+  "payload": {
+    "criteria": [
+      "Every claim is linked to at least one evidence item or explicitly marked as unverified",
+      "Print view renders cleanly on A4 without content loss",
+      "Evidence-map view can traverse from claim -> evidence -> source"
+    ]
+  }
+}

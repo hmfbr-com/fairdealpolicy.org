@@ -1,0 +1,9 @@
+{
+  "atom_id": "claim_001",
+  "type": "claim",
+  "payload": {
+    "claim_text": "A package-based bundle with typed relationships can preserve meaning across tools via graceful degradation.",
+    "status": "asserted",
+    "confidence_self_reported": 0.75
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "atom_id": "source_001",
+  "type": "source",
+  "payload": {
+    "title": "W3C PROV-DM: The PROV Data Model",
+    "locator": "https://www.w3.org/TR/prov-dm/",
+    "kind": "url",
+    "publisher": "W3C",
+    "year": 2013
+  }
+}

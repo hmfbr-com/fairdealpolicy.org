@@ -1,0 +1,7 @@
+{
+  "atom_id": "intent_goal_001",
+  "type": "intent.goal",
+  "payload": {
+    "text": "Provide a concise brief supported by traceable evidence, and a map that shows how evidence supports claims."
+  }
+}

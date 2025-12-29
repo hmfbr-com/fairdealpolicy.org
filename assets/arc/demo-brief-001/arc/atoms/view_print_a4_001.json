@@ -1,0 +1,19 @@
+{
+  "atom_id": "view_print_a4_001",
+  "type": "ui.component",
+  "payload": {
+    "component_kind": "print_view",
+    "title": "Print View (A4)",
+    "target": "views/print_a4.html",
+    "status": "generated",
+    "print": {
+      "paper": "A4",
+      "margins_mm": {
+        "top": 12,
+        "right": 12,
+        "bottom": 12,
+        "left": 12
+      }
+    }
+  }
+}

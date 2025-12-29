@@ -1,0 +1,9 @@
+{
+  "atom_id": "ui_component_evidence_map_001",
+  "type": "ui.component",
+  "payload": {
+    "component_kind": "evidence_map",
+    "title": "Evidence Map",
+    "description": "Graph view: claim -> evidence -> source traversal."
+  }
+}

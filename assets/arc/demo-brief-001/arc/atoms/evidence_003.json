@@ -1,0 +1,9 @@
+{
+  "atom_id": "evidence_003",
+  "type": "evidence",
+  "payload": {
+    "summary": "Git objects are content-addressed, supporting identity stability independent of file paths.",
+    "excerpt": "Key idea: object identity derived from content enables robust history and integrity.",
+    "note": "Paraphrase summary; do not treat as verbatim quotation."
+  }
+}

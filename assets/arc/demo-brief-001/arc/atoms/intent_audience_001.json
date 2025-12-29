@@ -1,0 +1,12 @@
+{
+  "atom_id": "intent_audience_001",
+  "type": "intent.audience",
+  "payload": {
+    "audience": [
+      "internal strategy team",
+      "reviewers",
+      "external stakeholders (optional later)"
+    ],
+    "tone": "analytical, reality-first"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "atom_id": "claim_002",
+  "type": "claim",
+  "payload": {
+    "claim_text": "Separating source atoms from view outputs enables continual UI redesign without migrating meaning.",
+    "status": "asserted",
+    "confidence_self_reported": 0.8
+  }
+}
