@@ -353,3 +353,99 @@ pre code { font-size: 15px; line-height: 1.55; }
   pre{ overflow-x: auto; -webkit-overflow-scrolling: touch; }
   code{ font-size: .95em; }
 }
+
+
+/* --- Nav: "More" dropdown (polished) --- */
+
+/* Ensure nav row wraps nicely without ugly full-width items */
+.navlinks{
+  display:flex;
+  align-items:center;
+  gap:22px;
+  flex-wrap:wrap;
+}
+
+/* Make <details> behave like a normal inline nav item */
+.navlinks .nav-more{
+  position:relative;
+  display:inline-block;
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+/* Style the summary like your other nav links */
+.navlinks .nav-more > summary{
+  list-style:none;
+  cursor:pointer;
+  user-select:none;
+  padding:6px 10px;
+  border-radius:10px;
+  font-weight:600;
+  color:inherit;
+  outline:none;
+}
+
+/* Remove default marker */
+.navlinks .nav-more > summary::-webkit-details-marker{ display:none; }
+
+/* Add a subtle chevron */
+.navlinks .nav-more > summary::after{
+  content:"▾";
+  font-size:.9em;
+  margin-left:8px;
+  opacity:.7;
+}
+
+/* Hover states aligned with typical nav link hover */
+.navlinks .nav-more > summary:hover{
+  background:rgba(15, 23, 42, 0.06);
+}
+
+/* Open state */
+.navlinks .nav-more[open] > summary{
+  background:rgba(15, 23, 42, 0.08);
+}
+
+/* The dropdown panel */
+.navlinks .nav-more-menu{
+  position:absolute;
+  right:0;
+  top:calc(100% + 10px);
+  min-width:240px;
+  padding:10px;
+  border-radius:14px;
+  background:#fff;
+  box-shadow:0 16px 40px rgba(0,0,0,.14);
+  border:1px solid rgba(0,0,0,.08);
+  z-index:999;
+}
+
+/* Dropdown links */
+.navlinks .nav-more-menu a{
+  display:block;
+  padding:9px 10px;
+  border-radius:10px;
+  text-decoration:none;
+  color:inherit;
+  font-weight:600;
+}
+
+.navlinks .nav-more-menu a:hover{
+  background:rgba(15, 23, 42, 0.06);
+}
+
+/* Mobile: make dropdown panel flow naturally inside hamburger menu */
+@media (max-width: 820px){
+  .navlinks .nav-more{ width:100%; }
+  .navlinks .nav-more > summary{ width:100%; }
+
+  .navlinks .nav-more-menu{
+    position:static;
+    min-width:auto;
+    padding:6px 0 0 0;
+    border:0;
+    box-shadow:none;
+    background:transparent;
+  }
+}

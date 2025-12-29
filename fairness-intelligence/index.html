@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fairness-Intelligence | Fair Deal Policy</title>
+  <meta name="description" content="A portable prompt pack to evaluate fairness at the outset: score, diagnose, propose leverage edits, and rewrite 'Before you commit' language." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fairness-Intelligence | Fair Deal Policy" />
+  <meta property="og:description" content="Run a simple outset check before you commit: score, diagnose, propose leverage edits, and rewrite the outset in plain language." />
+  <meta property="og:url" content="https://fairdealpolicy.org/fairness-intelligence/" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Fairness-Intelligence | Fair Deal Policy" />
+  <meta name="twitter:description" content="A portable prompt pack to evaluate fairness at the outset — before commitment." />
+
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!-- Page-local layout helpers (safe defaults) -->
+  <style>
+    /* Base wrapper consistent with the rest of your page */
+    .fdp-wrap{max-width:900px;margin:0 auto;padding:1.25rem}
+
+    /* Top bar / nav (mobile-safe) */
+    .fdp-topbar{padding:0.75rem 0 0.25rem 0}
+    .fdp-nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+    .fdp-brand{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+    .fdp-brand strong{letter-spacing:.2px}
+    .fdp-links{display:flex;gap:.8rem;flex-wrap:wrap}
+    .fdp-links a{text-decoration:none;padding:.35rem .5rem;border-radius:.55rem}
+    .fdp-links a[aria-current="page"]{outline:1px solid rgba(255,255,255,.18)}
+
+    /* Your page-specific styles (kept, slightly normalized) */
+    .fi-box{padding:1rem;border:1px solid rgba(255,255,255,.12);border-radius:.9rem}
+    textarea{width:100%;min-height:220px;padding:.9rem;border-radius:.75rem}
+    .fi-row{display:grid;grid-template-columns:1fr;gap:.75rem}
+    .fi-actions{display:flex;gap:.6rem;flex-wrap:wrap}
+    button{padding:.6rem .9rem;border-radius:.75rem;cursor:pointer}
+    .fi-note{opacity:.85;font-size:.95em}
+    details{border-top:1px solid rgba(255,255,255,.08);padding:.75rem 0}
+    summary{cursor:pointer}
+    code, pre{white-space:pre-wrap}
+  </style>
+</head>
+
+<body>
+
+<div id="site-header"></div>
+
+  <!-- Page intro -->
+  <header class="fdp-wrap">
+    <h1>Fairness-Intelligence</h1>
+    <p class="fi-note">
+      Use this prompt before you commit. It does not judge morality or legality — it makes outset conditions visible.
+      For the conceptual spine, see <a href="/pre-commit/">Pre-Commit Foundations</a>.
+    </p>
+  </header>
+
+  <main class="fdp-wrap">
+
+  <section class="fi-row">
+
+    <div class="fi-box">
+      <h2>Copy-paste prompt</h2>
+      <p class="fi-note">
+        Paste into any LLM. Provide your situation under “INPUT”. You’ll receive: (1) Outset Vector, (2) OFP, (3) Top 3 leverage edits, (4) plain-language “Before you commit”.
+      </p>
+
+      <textarea id="prompt" spellcheck="false">
+Context:
+You are acting as a Fairness-Intelligence assistant using Fair Deal Policy (FDP) and Outset Theory.
+Your task is not to judge morality or legality, but to analyze outset conditions that shape future outcomes.
+
+INPUT (describe the situation):
+- Type of interaction (e.g. contract, platform terms, procurement, policy, collaboration, system design)
+- Parties involved and their relative positions
+- What commitment is being asked for
+- What happens if things go wrong
+- Any relevant constraints (time, law, market, necessity)
+
+TASKS (perform all 4 steps):
+
+1) Outset Vector Scoring
+Score 0–5 for each, with brief justification:
+C — Clarity
+A — Agency
+R — Risk symmetry
+X — Exit friction
+I — Information symmetry
+P — Power asymmetry
+T — Time pressure
+Present as:
+O = (C=?, A=?, R=?, X=?, I=?, P=?, T=?)
+
+2) Outset Fairness Potential (OFP)
+Estimate OFP as High / Medium / Low.
+Identify which variables most constrain fairness.
+
+3) Top 3 Leverage-Point Improvements
+Identify three small, early changes that most improve fairness before commitment.
+Feasible, upstream, non-ideological, proportionate.
+
+4) “Before You Commit” Plain-Language Summary
+Rewrite the outset as a short checkpoint:
+- What is being decided now?
+- What assumptions are being accepted?
+- What happens if it doesn’t work?
+- How easy is it to pause, clarify, exit?
+
+OUTPUT FORMAT:
+- Sectioned (1–4)
+- Concise but explicit
+- No moralizing
+- No legal advice
+- Highlight uncertainty where present.
+      </textarea>
+
+      <div class="fi-actions" style="margin-top:.75rem">
+        <button type="button" onclick="copyPrompt()">Copy prompt</button>
+        <a href="/pre-commit/" class="fi-note" style="align-self:center">Back to Pre-Commit Foundations</a>
+      </div>
+    </div>
+
+    <div class="fi-box">
+      <h2>Worked examples (v0)</h2>
+
+      <details>
+        <summary><strong>Example A</strong> — Platform ToS + “neutrality” claim</summary>
+        <div class="fi-note">
+          Input: long ToS, opaque ranking, opt-out data sharing, unilateral changes, high lock-in.<br/>
+          Ask the model to propose 3 outset edits that reduce power asymmetry and increase clarity.
+        </div>
+      </details>
+
+      <details>
+        <summary><strong>Example B</strong> — Freelancer deal via marketplace</summary>
+        <div class="fi-note">
+          Input: scope ambiguity, revision creep, reputational exit friction, disputes skewed.<br/>
+          Ask for rewritten “Before you commit” language + scope caps.
+        </div>
+      </details>
+
+      <details>
+        <summary><strong>Example C</strong> — Procurement brief before first bid</summary>
+        <div class="fi-note">
+          Input: incumbent-biased framing, risk dumped on suppliers, compressed timeline.<br/>
+          Ask for leverage edits: pre-market dialogue, proportional risk, timeline sanity.
+        </div>
+      </details>
+
+    </div>
+
+    <div class="fi-note">
+      <strong>Disclaimer:</strong> FDP Fairness-Intelligence is a voluntary reasoning aid, not legal advice, not enforcement, and not a certification.
+    </div>
+
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="/assets/js/partials.js"></script>
+<script src="/assets/js/copy.js"></script>
+<script src="/assets/js/nav.js"></script>
+
+<script>
+  function copyPrompt(){
+    const el = document.getElementById('prompt');
+    el.select();
+    el.setSelectionRange(0, 999999);
+    document.execCommand('copy');
+  }
+</script>
+
+</body>
+</html>
