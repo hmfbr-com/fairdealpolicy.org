@@ -449,3 +449,74 @@ pre code { font-size: 15px; line-height: 1.55; }
     background:transparent;
   }
 }
+
+
+/* --- Mobile nav collapse behavior --- */
+@media (max-width: 820px) {
+  /* Show hamburger button on mobile */
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Hide nav links by default on mobile */
+  #site-nav.navlinks {
+    display: none;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  /* Show when toggled open */
+  #site-nav.navlinks.open {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+
+  /* Make dropdown behave like a normal item in the vertical list */
+  .navlinks .nav-more {
+    width: 100%;
+  }
+
+  .navlinks .nav-more > summary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 820px) {
+
+  /* When nav is open, make it a clean left-aligned vertical list */
+  #site-nav.navlinks.open{
+    align-items: stretch;   /* not centered */
+    text-align: left;       /* unify text alignment */
+  }
+
+  /* Make every top-level nav item full width and left-aligned */
+  #site-nav.navlinks.open > a{
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+    display: block;
+  }
+
+  /* The "More" control should also be full width and left */
+  #site-nav.navlinks.open .nav-more{
+    width: 100%;
+  }
+
+  #site-nav.navlinks.open .nav-more > summary{
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  /* Dropdown list in mobile should behave like normal list items */
+  #site-nav.navlinks.open .nav-more-menu a{
+    width: 100%;
+    text-align: left;
+  }
+}
